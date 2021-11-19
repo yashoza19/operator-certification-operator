@@ -1,4 +1,4 @@
-IMAGE_BUILDER ?= podman
+IMAGE_BUILDER ?= docker
 
 # VERSION defines the project version for the bundle.
 # Update this value when you upgrade the version of your project.
@@ -32,7 +32,7 @@ BUNDLE_METADATA_OPTS ?= $(BUNDLE_CHANNELS) $(BUNDLE_DEFAULT_CHANNEL)
 #
 # For example, running 'make bundle-build bundle-push catalog-build catalog-push' will build and push both
 # redhat.com/operator-certification-operator-bundle:$VERSION and redhat.com/operator-certification-operator-catalog:$VERSION.
-IMAGE_TAG_BASE ?= quay.io/opdev/operator-certification-operator
+IMAGE_TAG_BASE ?= quay.io/yoza/operator-certification-operator
 
 # BUNDLE_IMG defines the image:tag used for the bundle.
 # You can use it as an arg. (E.g make bundle-build BUNDLE_IMG=<some-registry>/<project-name-bundle>:<tag>)

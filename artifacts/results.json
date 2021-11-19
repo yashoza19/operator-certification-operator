@@ -1,0 +1,43 @@
+{
+    "image": "quay.io/yoza/operator-certification-operator-bundle:68ad3990be013fa05086620eb6fd5f9a417b9fa9",
+    "passed": false,
+    "certification_hash": "3f468516fa7448303a3ef6e2aebcf6c8",
+    "test_library": {
+        "name": "github.com/redhat-openshift-ecosystem/openshift-preflight",
+        "version": "0.0.0",
+        "commit": "46fa5bbd095366b69864edbe4718aecdb7c271e4"
+    },
+    "results": {
+        "passed": [
+            {
+                "name": "ScorecardBasicSpecCheck",
+                "elapsed_time": 9598,
+                "description": "Check to make sure that all CRs have a spec block."
+            },
+            {
+                "name": "ScorecardOlmSuiteCheck",
+                "elapsed_time": 6459,
+                "description": "Operator-sdk scorecard OLM Test Suite Check"
+            }
+        ],
+        "failed": [
+            {
+                "name": "ValidateOperatorBundle",
+                "elapsed_time": 110,
+                "description": "Validating Bundle image that checks if it can validate the content and format of the operator bundle",
+                "help": "Check ValidateOperatorBundle encountered an error. Please review the preflight.log file for more information.",
+                "suggestion": "Valid bundles are defined by bundle spec, so make sure that this bundle conforms to that spec. More Information: https://github.com/operator-framework/operator-registry/blob/master/docs/design/operator-bundle.md",
+                "knowledgebase_url": "https://connect.redhat.com/zones/containers/container-certification-policy-guide",
+                "check_url": "https://connect.redhat.com/zones/containers/container-certification-policy-guide"
+            }
+        ],
+        "errors": [
+            {
+                "name": "DeployableByOLM",
+                "elapsed_time": 6710,
+                "description": "Checking if the operator could be deployed by OLM",
+                "help": "It is required that your operator could be deployed by OLM"
+            }
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+10b3177a4da0a4ac7447c34a8358a0d0  ./tests/scorecard/config.yaml
+14725f901aed554f1a3840fcca458ffe  ./metadata/annotations.yaml
+310c8e2b4e1a91d0b1fa1a873fbbcf1d  ./manifests/certification-operator-manager-config_v1_configmap.yaml
+3471b8504612081e0e17db677eabdfe8  ./manifests/certification-operator-metrics-reader_rbac.authorization.k8s.io_v1_clusterrole.yaml
+80311f662559486c078d25204b58948b  ./manifests/certification.redhat.com_operatorpipelines.yaml
+ad67e9ca732e6dbc9047390daa82d2c9  ./manifests/operator-certification-operator.clusterserviceversion.yaml
+fb750d0404c414e1077bb960a657835d  ./manifests/certification-operator-controller-manager-metrics-service_v1_service.yaml
